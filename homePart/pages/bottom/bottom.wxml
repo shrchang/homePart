@@ -23,7 +23,7 @@
         <span>场馆</span>
       </div>
       <div class="bottom-btn">
-        <div>
+        <div bindtap='selfBtn'>
           <block wx:if="{{index == 3}}">
             <image src='../images/bottom/self_check.png'></image>
           </block>

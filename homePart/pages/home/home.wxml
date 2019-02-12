@@ -34,5 +34,6 @@
         <span>预约说明</span>
       </div>
     </view>
-    <template is="partBottom" data="{{index}}"></template>
+    <!--下面是主菜tab,这样写跳转页面,下面就会被覆盖掉的,在app.json中注册tabBar-->
+    <!--<template is="partBottom" data="{{index}}"></template>-->
 </view>
