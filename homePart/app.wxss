@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.bottom{
+  height: 3rem;
+  font-size: .6rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0rem;
+  border-top: solid 1rpx #e6e6e6;
+}
+
+.bottom .bottom-btn{
+  float: left;
+  margin: 0.3rem 2.3rem;
+}
+
+.bottom .bottom-btn div{
+  display: block;
+  cursor: pointer;
+}
+
+.bottom span{
+  margin-left: 10rpx;
+}
+
+.bottom image{
+  width: 70rpx;
+  height: 60rpx;
+}

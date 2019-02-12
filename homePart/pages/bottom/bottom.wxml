@@ -1,0 +1,37 @@
+<template name="partBottom">
+  <view class="bottom">
+      <div class="bottom-btn">
+        <div>
+          <block wx:if="{{index == 1}}">
+            <image src='../images/bottom/home_check.png'></image>
+          </block>
+          <block wx:else>
+            <image src='../images/bottom/home.png'></image>
+          </block>
+        </div>
+        <span>首页</span>
+      </div>
+      <div class="bottom-btn">
+        <div>
+          <block wx:if="{{index == 2}}">
+            <image src='../images/bottom/room_check.png'></image>
+          </block>
+          <block wx:else>
+            <image src='../images/bottom/room.png'></image>
+          </block>
+        </div>
+        <span>场馆</span>
+      </div>
+      <div class="bottom-btn">
+        <div>
+          <block wx:if="{{index == 3}}">
+            <image src='../images/bottom/self_check.png'></image>
+          </block>
+          <block wx:else>
+            <image src='../images/bottom/self.png'></image>
+          </block>
+        </div>
+        <span>我的</span>
+      </div>
+  </view>
+</template>
