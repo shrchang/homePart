@@ -11,28 +11,68 @@
 
 .middle{
   margin-top: 20rpx;
-  height: 3rem;
-  margin-left: 10%;
+  overflow: hidden;
 }
 
 .middle-title{
-  width: 100%;
-  display: block;
   height: 2rem;
   text-align: center;
 }
 
-.middle-title div{
+.middle-title .middle-text{
   border: solid 1rpx #e6e6e6;
-  height: 2rem;
-  margin: 20rpx 2rpx;
+  height: 2.5rem;
+  display: block;
+  border-radius: 10rpx;
+  margin: 30rpx 80rpx;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+.middle-title .middle-text image{
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  line-height: 2.5rem;
+  margin: 0.5rem 20rpx;
+}
+
+.middle-title .middle-text div{
+  width: 60%;
+  float: left;
+}
+
+.middle-text span{
+  display: block;
+  text-align: left;
+  font-size: 20rpx;
+  color: #696969;
+  margin-top: 4rpx;
+  margin-left: 20rpx;
+}
+
+.middle-text span.span-title{
+  color: #000;
+  font-size: 30rpx;
+}
+
+.middle-title .middle-text button{
+  width:130rpx;
+  height:60rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  float:left;
+  font-size:25rpx;
+  margin-top:15rpx;
+  color: #fff;
+  border-radius: 25rpx;
+  background-color:#20B2AA;
 }
 
 .middle .btn-group{
   float: left;
-  width: 25%;
   font-size: 20rpx;
   border:0rem;
+  margin: 0 6%;
 }
 
 .middle .btn-group div{
@@ -54,4 +94,49 @@
 .middle .btn-group span{
   margin-left: 10rpx;
   margin-top: 20rpx;
+}
+
+.md-header{
+  width: 100%;
+  margin-top: 30rpx;
+  display: block;
+  text-align: center;
+}
+
+.md-header hr{
+  height: 1rpx;
+  width: 120rpx;
+  border: none;
+  border-top: 1rpx solid #ddd;
+  display: inline-block;
+  margin-bottom: 15rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.scroll-view{
+  height: 300rpx;
+  width: auto;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.scroll-view .scroll-room{
+  height: 300rpx;
+  width: 30%;
+  display: inline-block;
+  margin: 0 20rpx;
+}
+
+.scroll-room image{
+  width: 100%;
+}
+
+.scroll_box{
+  width: 100%;
+  height: 300rpx;
+  overflow: hidden;
+  padding: 20rpx;
+  background: #fff;
+  white-space: nowrap;
 }

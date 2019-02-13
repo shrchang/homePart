@@ -5,12 +5,19 @@
     </view>
     <view class="middle">
       <div class="middle-title">
-        <div>
-
+        <div class="middle-text">
+            <image src='../images/home/hongbao.png'></image>
+            <div>
+              <span class="span-title">充值优惠：</span>
+              <span>{{notice}}</span>
+            </div>
+            <button>去充值</button>
         </div>
       </div>
+    </view>
+    <view class="middle">  
       <div class="btn-group">
-          <div>
+          <div bindtap="selfBtn">
             <image src='../images/home/task.png'></image>
           </div>
           <span>任务中心</span>
@@ -33,6 +40,24 @@
           </div>
         <span>预约说明</span>
       </div>
+    </view>
+    <view class="middle">
+      <div class="md-header">
+        <hr></hr>
+        <span>火热啪店</span>
+        <hr></hr>
+      </div>
+    </view>
+    <view class="scroll_box">
+      <scroll-view 
+        scroll-x
+        class="scroll-view">
+        <block wx:for="{{rooms}}" wx:key="id">
+          <view id="{{item.id}}" class="scroll-room">
+            <image src="{{item.src}}"></image>
+          </view>
+        </block>
+      </scroll-view>
     </view>
     <!--下面是主菜tab,这样写跳转页面,下面就会被覆盖掉的,在app.json中注册tabBar-->
     <!--<template is="partBottom" data="{{index}}"></template>-->
