@@ -1,1 +1,117 @@
 /* pages/self/self.wxss */
+
+.self-head{
+  height: 4rem;
+}
+
+.self-head .self-head-middle{
+  float: left;
+  margin-top: 30rpx;
+}
+
+.self-head .avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx #ccc;
+  margin: 20rpx 50rpx;
+  float: left;
+}
+
+.self-head-middle div{
+  display: block;
+}
+
+.self-head-middle .hy{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.self-head-middle .hy-span{
+  font-size: 40rpx;
+}
+
+.self-head  button{
+  width:180rpx;
+  height:60rpx;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  float:left;
+  font-size:25rpx;
+  margin-top:35rpx;
+  margin-left: 40rpx;
+  color: #fff;
+  border-radius: 25rpx;
+  background-color:#20B2AA;
+}
+
+.self-head-span{
+  font-size: 28rpx;
+  color: #ddd;
+  margin-left: 20rpx;
+}
+
+.self-middle{
+  border: solid 1rpx #e6e6e6;
+  height: 160rpx;
+  display: block;
+  border-radius: 10rpx;
+  margin: 30rpx 20rpx;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+.self-middle div{
+  width: 33.3%;
+  display: block;
+  float: left;
+  text-align: center;
+  height: 100%;
+}
+
+.self-middle label{
+  display:block;
+  height: 50%;
+  font-size: 35rpx;
+  margin-top: 30rpx;
+}
+
+.self-middle span{
+  display: block;
+  height: 500%;
+  margin-top: -15rpx;
+  font-size: 28rpx;
+  color: #ddd;
+}
+
+.self-bottom{
+  margin-top:20rpx;
+}
+
+.self-menu{
+  height: 150rpx;
+  border-bottom: 1px solid #ddd;
+  margin: 0 50rpx;
+  cursor: pointer;
+  /* line-height: 150rpx; */
+}
+
+.self-menu image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 40rpx;
+  margin-top: 80rpx;
+}
+
+.self-menu label{
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+
+.self-menu span{
+  float: right;
+  margin-right: 30rpx;
+  margin-top: 80rpx;
+  font-size: 35rpx;
+  color: #e6e6e6;
+}

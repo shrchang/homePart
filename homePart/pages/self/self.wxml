@@ -1,2 +1,53 @@
-<!--我的个人信息页面-->
-<text>我的个人信息</text>
+<view>
+    <view class="self-head">
+      <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      <div class="self-head-middle">
+        <div>
+          <image class="hy" src='../images/self/hy.png'></image>
+          <span class="hy-span">会员特权</span>
+        </div>
+        <div>
+          <span class="self-head-span">消费返现，各种特权不停</span>
+        </div>
+      </div>
+      <div>
+        <button>+ 开通会员</button>
+      </div>
+    </view>
+    <view class="self-middle">
+      <div>
+        <label>余额</label>
+        <span>¥ 500</span>
+      </div>
+      <div>
+        <label>轰趴豆</label>
+        <span>500</span>
+      </div>
+      <div>
+        <label>我的订单</label>
+        <span>20条</span>
+      </div>
+    </view>
+    <view class="self-bottom">
+      <view class="self-menu">
+        <image src='../images/self/yhj.png'></image>
+        <label>优惠券</label>
+        <span>></span>
+      </view>
+      <view class="self-menu">
+        <image src='../images/self/wdsc.png'></image>
+        <label>我的收藏</label>
+        <span>></span>
+      </view>
+      <view class="self-menu">
+        <image src='../images/self/wdpj.png'></image>
+        <label>我的评价</label>
+        <span>></span>
+      </view>
+      <view class="self-menu">
+        <image src='../images/self/help.png'></image>
+        <label>帮助中心</label>
+        <span>></span>
+      </view>
+    </view>
+</view>
