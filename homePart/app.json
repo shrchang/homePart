@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/orderlist/orderlist",
     "pages/reserve/reserve",
     "pages/home/home",
     "pages/room/room",
@@ -11,7 +12,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "轰趴馆",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

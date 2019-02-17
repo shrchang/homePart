@@ -1,0 +1,15 @@
+<view>
+  <view class="order-list-header">
+    <view class="view-checked" wx:if="{{type == 1}}">全部订单</view>
+    <view wx:else catchtap='clickType' data-type="1">全部订单</view>
+    <view class="view-checked" wx:if="{{type == 2}}">待支付</view>
+    <view wx:else catchtap='clickType' data-type="2">待支付</view>
+    <view class="view-checked" wx:if="{{type == 3}}">已完成</view>
+    <view wx:else catchtap='clickType' data-type="3">已完成</view>
+  </view>
+  <view class="order-content">
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
