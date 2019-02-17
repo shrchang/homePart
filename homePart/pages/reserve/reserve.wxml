@@ -1,0 +1,40 @@
+<view>
+  <view class="reserve-head">
+    <label>¥ 2000</label>
+    <span>请尽快支付，支付剩余时间：00:28:39</span>
+  </view>
+  <view class="reserve-mid">
+    <view class="reserve-mid-title">预定信息</view>
+    <view class="reserve-mid-v">
+      <label>手机号：</label>
+      <span>15202035274</span>
+    </view>
+    <view class="reserve-mid-v">
+      <label>下单时间：</label>
+      <span>2018-10-29 12:00:22</span>
+    </view>
+    <view class="reserve-mid-v">
+      <label>优惠价：</label>
+      <span>¥ 100.00</span>
+    </view>
+    <view class="reserve-mid-v">
+      <label>总价：</label>
+      <span>¥ 2000.00</span>
+    </view>
+    <view class="reserve-mid-bnt">
+      <image class="pay-icon" src='../images/reserve/hy.png'></image>
+      <span class="mid-bnt-span">会员支付</span>
+      <image class="pay-btn-icon" wx:if="{{hyChecked}}" src='../images/reserve/checked.png'></image>
+      <image class="pay-btn-icon" wx:else src="../images/reserve/uncheck.png" catchtap="selectPayType"></image>
+    </view>
+    <view class="reserve-mid-bnt-else">
+      <image class="pay-icon" src='../images/reserve/wx.png'></image>
+      <span class="mid-bnt-span">微信支付</span>
+      <image class="pay-btn-icon"  wx:if="{{!hyChecked}}" src='../images/reserve/checked.png'></image>
+      <image class="pay-btn-icon" wx:else src="../images/reserve/uncheck.png" catchtap="selectPayType"></image>
+    </view>
+  </view>
+  <view class="reserve-bottom">
+    <button>确认支付</button>
+  </view>
+</view>

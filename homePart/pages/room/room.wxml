@@ -1,0 +1,17 @@
+<view>
+  <block wx:for="{{rooms}}">
+    <div class="room-card">
+      <image class="room-img" src='{{item.roomIcon}}'></image>
+      <div class="room-detail">
+          <div class="detail-div">
+            <label>{{item.roomName}}</label>
+            <span>{{item.roomDesc}}</span>
+            <span><image src='../images/room/map.png' class="icon-map"></image>{{item.roomAdress}}</span>
+          </div>
+          <div class="room-price">
+            <span>¥{{item.roomPrice}}</span>
+          </div>
+      </div>
+    </div>
+  </block>
+</view>

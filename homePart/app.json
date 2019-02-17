@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/reserve/reserve",
     "pages/home/home",
+    "pages/room/room",
     "pages/index/index",
     "pages/logs/logs",
     "pages/self/self",
@@ -21,7 +23,7 @@
         "iconPath": "/pages/images/bottom/home.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/room/room",
         "text": "场馆",
         "selectedIconPath": "/pages/images/bottom/room_check.png",
         "iconPath": "pages/images/bottom/room.png"

@@ -1,0 +1,63 @@
+.room-card{
+  width: 100%;
+  display: block;
+  margin: 30rpx 0rpx;
+}
+
+.room-card .room-img{
+  width: 200rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  float: left;
+  margin-left: 30rpx;
+  display: block;
+  cursor: pointer;
+}
+
+.room-detail{
+  height: 150rpx;
+  display: block;
+  margin-left: 250rpx;
+  margin-right: 20rpx;
+}
+
+.room-detail div{
+  margin-top: 20rpx;
+}
+
+.room-detail label{
+  font-size: 30rpx;
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.room-detail span{
+  font-size: 20rpx;
+  margin-bottom: 5rpx;
+  display: block;
+}
+
+.detail-div{
+  float: left;
+  display: block;
+  width: 85%;
+}
+
+.detail-div span{
+  color: #696969;
+}
+
+.room-price{
+  float: left;
+}
+
+.room-price span{
+  color: red;
+  display: block;
+}
+
+.room-card .icon-map{
+  width: 20rpx;
+  height: 23rpx;
+  margin-right: 10rpx;
+}

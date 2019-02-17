@@ -48,7 +48,7 @@
 
 .self-head-span{
   font-size: 28rpx;
-  color: #ddd;
+  color: #696969;
   margin-left: 20rpx;
 }
 
@@ -81,7 +81,7 @@
   height: 500%;
   margin-top: -15rpx;
   font-size: 28rpx;
-  color: #ddd;
+  color: #696969;
 }
 
 .self-bottom{

@@ -21,10 +21,10 @@
 
 .middle-title .middle-text{
   border: solid 1rpx #e6e6e6;
-  height: 2.5rem;
+  height: 3rem;
   display: block;
   border-radius: 10rpx;
-  margin: 30rpx 80rpx;
+  margin: 30rpx 10rpx;
   box-shadow: 0 0 10rpx #ccc;
 }
 
@@ -32,13 +32,14 @@
   width: 60rpx;
   height: 60rpx;
   float: left;
-  line-height: 2.5rem;
+  line-height: 3rem;
   margin: 0.5rem 20rpx;
 }
 
 .middle-title .middle-text div{
   width: 60%;
   float: left;
+  margin-top: 10rpx;
 }
 
 .middle-text span{
@@ -62,7 +63,7 @@
   background-size:100% 100%;
   float:left;
   font-size:25rpx;
-  margin-top:15rpx;
+  margin-top:20rpx;
   color: #fff;
   border-radius: 25rpx;
   background-color:#20B2AA;
