@@ -16,18 +16,30 @@ Page({
       roomIcon: "http://img1.imgtn.bdimg.com/it/u=2975368640,712443329&fm=26&gp=0.jpg",
       roomName: "威廉古堡",
       roomDesc: "可满足5～30人",
-      roomAdress: "广州市番禺区外环西路5号",
+      roomAdress: "广州市番禺区外环西路6号",
       roomPrice: "1500"
     },{
         id: "3",
         roomIcon: "http://img1.imgtn.bdimg.com/it/u=2170044603,225501748&fm=26&gp=0.jpg",
         roomName: "梦幻空间",
         roomDesc: "可满足5～30人",
-        roomAdress: "广州市番禺区外环西路5号",
+        roomAdress: "广州市番禺区外环西路7号",
         roomPrice: "3000"
     }]
   },
   onLoad: function () {
 
+  },
+  toInfoView: function(e){
+    let roomInfo = e.currentTarget.dataset['index'];
+    roomInfo.roomIcon="";
+    let room = JSON.stringify(roomInfo);
+    console.log(room);
+    wx.navigateTo({
+      url: 'info/room_info?data=' + room,
+    })
+    wx.setNavigationBarTitle({
+      title: roomInfo.roomName,
+    })
   }
 })

@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/home/home",
+    "pages/self/self",
     "pages/orderlist/orderlist",
     "pages/reserve/reserve",
-    "pages/home/home",
-    "pages/room/room",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/self/self",
+    "pages/room/room",
     "pages/bottom/bottom"
   ],
   "window": {

@@ -1,0 +1,33 @@
+<!--pages/room/info/room_info.wxml-->
+<view>
+  <view class="head">
+    <swiper class="swiperContainer" bindchange="swiperChange"autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{movies}}" wx:for-index="*this">
+        <swiper-item>
+          <image src="{{item.url}}" style="width: {{imageWidth}}px;" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="imageCount">{{current+1}}/{{movies.length}}</view>
+  </view>
+  <view class="roominfo">
+    <view class="roominfo-top">
+      <text class="roomname">{{roominfo.roomName}}</text>
+      <text class="price">¥{{roominfo.roomPrice}}</text>
+    </view>
+    <view class='roominfo-bottom'>
+      <image class='map-icon' src="{{mapIcon}}"></image>
+      <view class="distance">{{roominfo.roomAdress}}</view>
+    </view>
+    
+  </view>
+    <!-- 分割线 -->
+  <view class="divLine"></view>
+  <view class="middle">
+    <div class="md-header">
+      <hr></hr>
+      <span>其他场次</span>
+      <hr></hr>
+    </div>
+  </view>
+</view>

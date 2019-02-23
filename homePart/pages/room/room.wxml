@@ -1,6 +1,6 @@
 <view>
   <block wx:for="{{rooms}}">
-    <div class="room-card">
+    <div class="room-card" bindtap="toInfoView" data-index="{{item}}">
       <image class="room-img" src='{{item.roomIcon}}'></image>
       <div class="room-detail">
           <div class="detail-div">
