@@ -92,6 +92,15 @@ Page({
 
   },
 
+  /**
+   * 跳转到我的订单界面
+   */
+  toOrderView:function(){
+    wx.navigateTo({
+      url: '../orderlist/orderlist',
+    })
+  },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

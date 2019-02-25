@@ -37,3 +37,66 @@
   margin: 30rpx 20rpx;
   box-shadow: 0 0 10rpx #ccc;
 }
+
+.order-card-left{
+  width: 33%;
+  float: left;
+  height: 100%;
+}
+
+.order-card-left image{
+  width: 200rpx;
+  height: 160rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 10rpx;
+}
+
+.order-card-right{
+  float: left;
+  width: 63%;
+  height: 100%;
+}
+
+.order-card-right span{
+  font-size: 0.6rem;
+  color: #969696;
+  width: 100%;
+  display: block;
+  margin-bottom: 10rpx;
+  margin-left: 10rpx;
+}
+
+.card-title{
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.order-card-right .card-title label{
+  font-size: 0.8rem;
+}
+
+.card-title span{
+  font-size: 0.5rem;
+  display: inline-block;
+  width: auto;
+  color: #969696;
+}
+
+.card-bootm{
+  margin-top: 10rpx;
+  float: right;
+}
+
+.card-bootm button{
+  font-size: 0.6rem;
+  width: 150rpx;
+  border-radius: 20rpx;
+  display: inline-block;
+  margin-right: 15rpx;
+}
+
+.card-bootm button.green{
+  border-color: #969696;
+  color: #969696;
+}

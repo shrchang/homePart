@@ -2,8 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/self/self",
-    "pages/orderlist/orderlist",
     "pages/reserve/reserve",
+    "pages/confirm/confirm",
+    "pages/orderlist/orderlist",
     "pages/index/index",
     "pages/logs/logs",
     "pages/room/room",

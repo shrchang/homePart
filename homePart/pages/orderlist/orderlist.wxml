@@ -8,8 +8,23 @@
     <view wx:else catchtap='clickType' data-type="3">已完成</view>
   </view>
   <view class="order-content">
-    <view></view>
-    <view></view>
-    <view></view>
+    <view>
+      <div class="order-card-left">
+        <image class="order-img" src='https://f11.baidu.com/it/u=1134393228,653228807&fm=72'></image>
+      </div>
+      <div class="order-card-right">
+        <div class="card-title">
+          <label>大学城轰趴基地</label><span>订单时间：2018-10-29</span>
+        </div>
+        <span>时间：2018-10-31 （星期三） 10:00-15:00</span>
+        <span>场地价格：¥ 2000</span>
+        <span>已付定金：¥ 0</span>
+        <span>待付定金：¥ 2000</span>
+        <div class="card-bootm">
+          <button>取消订单</button>
+          <button class="green">继续付款</button>
+        </div>
+      </div>
+    </view>
   </view>
 </view>

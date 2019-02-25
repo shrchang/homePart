@@ -23,7 +23,7 @@
         <label>轰趴豆</label>
         <span>500</span>
       </div>
-      <div>
+      <div bindtap="toOrderView">
         <label>我的订单</label>
         <span>20条</span>
       </div>
