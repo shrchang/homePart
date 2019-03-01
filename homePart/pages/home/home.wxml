@@ -48,7 +48,7 @@
         <hr></hr>
       </div>
     </view>
-    <view class="scroll_box">
+    <!-- <view class="scroll_box">
       <scroll-view 
         scroll-x
         class="scroll-view">
@@ -58,6 +58,20 @@
           </view>
         </block>
       </scroll-view>
+    </view> -->
+    <view class="moveImg">
+      <view class='backgroundview blur' style='background-image: url("{{backgroundImge}}");'>
+      </view>
+      <swiper class="qswiper-block" previous-margin="310rpx" next-margin="278rpx" current="{{swiperIndex}}" bindchange="qtccSwiperChange">
+        <block wx:for="{{imgUrls}}" wx:index="{{index}}">
+          <swiper-item class="qswiper-item">
+            <image mode="aspectFill" bindtap="previewImage" src="{{item}}" class="qslide-image {{swiperIndex == index ? 'active' : ''}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+     <view class="ccmc">
+      大学城轰趴基地-1号场
     </view>
     <!--下面是主菜tab,这样写跳转页面,下面就会被覆盖掉的,在app.json中注册tabBar-->
     <!--<template is="partBottom" data="{{index}}"></template>-->
