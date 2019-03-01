@@ -33,13 +33,10 @@ Page({
   toInfoView: function(e){
     let roomInfo = e.currentTarget.dataset['index'];
     roomInfo.roomIcon="";
-    let room = JSON.stringify(roomInfo);
-    console.log(room);
+    let room = {};
+    room.data = roomInfo;
     wx.navigateTo({
-      url: 'info/room_info?data=' + room,
-    })
-    wx.setNavigationBarTitle({
-      title: roomInfo.roomName,
+      url: 'info/room_info?data=' + JSON.stringify(room),
     })
   }
 })
