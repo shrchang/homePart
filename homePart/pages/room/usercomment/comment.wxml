@@ -1,0 +1,38 @@
+<!--pages/room/usercomment/comment.wxml-->
+<template name="usercommentTemplate">
+<view style='margin-left: 2%;height:380rpx'>
+  <view class='card'>
+    <view class='card-item'>
+      <view class="card-item-top">
+        <view class='user-name'>浪漫负能量</view>
+        <view class='card-item-top-right'>
+        <image class='shape-image' src='../../images/room/shape.png'></image>
+        <view class='shape-count'>231</view>
+        </view>
+
+      </view>
+      <view class="card-item-center">
+        <view class='user-score'>
+          <view wx:for="{{one_1}}" wx:key="item">
+            <image src='../../images/room/star.png'></image>
+          </view>
+          <view wx:for="{{two_1}}" wx:key="item">
+            <image src='../../images/room/starg.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='card-item-bottom'>
+          <view class="comment-text">大学城轰趴基地很舒适,很好玩.点赞!</view>
+          <view class="comment-image">
+              <image src='../../images/home/head.png' mode="widthFix"></image>
+              <image src='../../images/home/head.png' mode="widthFix"></image>
+              <image src='../../images/home/head.png' mode="widthFix"></image>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class='head-image'>
+   
+  </view>
+</view>
+</template>

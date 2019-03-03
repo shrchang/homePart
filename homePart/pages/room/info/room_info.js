@@ -11,6 +11,13 @@ Component({
    * 组件的初始数据
    */
   data: {
+    article: "我是html内容<br/>nihao, <br/><br/><br/><br/><br/><br/><br/>这个是测试<br/><br/>可以显示了<br/><br/><br/>hehe<b>很好，我变粗了</b >",
+    xitem:{
+      num: 4,//显示多少个
+      one_1: '',//点亮的
+      two_1: '',//没有点亮的
+    },
+    
     movies: [{
         url: 'http://img5.imgtn.bdimg.com/it/u=2608786755,3631115388&fm=26&gp=0.jpg',
         index: 1
@@ -53,7 +60,11 @@ Component({
     duration: 1000,
     swiperIndex: 3,
     backgroundImge: "http://img1.imgtn.bdimg.com/it/u=2975368640,712443329&fm=26&gp=0.jpg",
-    currentTab:0
+    currentTab:0,
+    commentNumber:6,
+    leftContentVisible: "show",
+    rightContentVisible: "none",
+    tabFixed:true
   },
 
   /**
@@ -66,9 +77,15 @@ Component({
       this.setData({
         roominfo: info.data
       });
+      this.setData({
+        one_1: this.data.num,
+        two_1: 5 - this.data.num
+      })
       wx.setNavigationBarTitle({
         title: info.data.roomName
       })
+      let WxParse = require("../../wxParse/wxParse.js");
+      WxParse.wxParse('article', 'html', this.data.article, this, 5);
     },
     /**
      * 修改当前索引
@@ -95,6 +112,15 @@ Component({
     },
     //点击切换
     clickTab: function (e) {
+      if (e.scrollTop > this.data.tabScrollTop) {
+        this.setData({
+          tabFixed: false
+        })
+      } else {
+        this.setData({
+          tabFixed: false
+        })
+      }
       var that = this;
       if (this.data.currentTab === e.target.dataset.current) {
         return false;

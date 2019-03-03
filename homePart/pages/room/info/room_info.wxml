@@ -1,5 +1,7 @@
 <!--pages/room/info/room_info.wxml-->
-<scroll-view scroll-y>
+<import src="../usercomment/comment.wxml" />
+<import src="../../wxParse/wxParse.wxml"/>
+<scroll-view scroll-y="true">
   <view class="head">
     <swiper class="swiperContainer" bindchange="swiperChange" autoplay="true" interval="5000" duration="1000">
       <block wx:for="{{movies}}" wx:for-index="*this">
@@ -61,16 +63,28 @@
   </view>
   <!-- 分割线 -->
   <view class="divLine"></view>
-  <view class="bottom-swiper-tab">
-    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">场地详情</view>
-    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">用户评价</view>
+  <view class="bottom-swiper">
+    <view class="bottom-tab">
+      <view class="bottom-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">场地详情</view>
+      <view class="bottom-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">用户评价</view>
+    </view>
+    <view class='bottom-tab-item-contents'>
+      <view class="bottom-tab-item-content {{currentTab==0?'content-show':''}}">
+        <view class="md-xqjs">
+          <view class="md-header">
+            <hr></hr>
+            <span>详情介绍</span>
+            <hr></hr>
+          </view>
+        </view>
+        <view class='cdxq-centent'>
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+        </view>
+      </view>
+      <view class="bottom-tab-item-content {{currentTab==1?'content-show':''}}">
+        <template is="usercommentTemplate" data="{{one_1:4,two_1:1}}" />
+        <template is="usercommentTemplate" data="{{one_1:3,two_1:2}}" />
+      </view>
+    </view>
   </view>
-  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
-    <swiper-item>
-      <view>场地详情</view>
-    </swiper-item>
-    <swiper-item>
-      <view>用户评价</view>
-    </swiper-item>
-  </swiper>
 </scroll-view>
