@@ -100,11 +100,11 @@
     </view>
   </view>
   <view class="date-tab">
-    <view wx:for="{{5}}" wx:index="{{index}}">
+    <view wx:for="{{bookedTabData}}" wx:key="item" wx:index="{{index}}">
       <view class="date-tab-item {{currentDateTab==index?'date-tab-active':''}}" data-current="{{index}}" bindtap="clickDateTab">
         <view class="date-tab-item-top">
-          <view>周日</view>
-          <view>12-23</view>
+          <view>{{item.week}}</view>
+          <view>{{item.date}}</view>
         </view>
       </view>
     </view>
