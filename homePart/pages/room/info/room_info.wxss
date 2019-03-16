@@ -339,4 +339,169 @@
 .content-show {
   display: block;
 }
+/* 预定弹出窗样式 */
+/* 预定弹出窗样式 */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  height: 85%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.booked-top {
+  display: flex;
+  justify-content: center;
+}
+
+.middle .md-header {
+  width: 100vw;
+  margin-top: 30rpx;
+  display: block;
+  text-align: center;
+}
+
+.md-header hr {
+  height: 1rpx;
+  width: 120rpx;
+  border: none;
+  border-top: 1rpx solid #ddd;
+  display: inline-block;
+  margin-bottom: 15rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.date-tab {
+  width: 100%;
+  border-bottom: 2rpx solid rgba(204, 204, 204, 0.808);
+  text-align: center;
+  height: 155rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+}
+
+.date-tab .date-tab-item {
+  font-size: 30rpx;
+  color: rgba(12, 11, 11, 0.603);
+  position: relative;
+}
+
+.date-tab-active {
+  color: rgb(10, 177, 80);
+  border-bottom: 4rpx solid rgb(10, 177, 80);
+}
+
+.date-tab-active view {
+  color: rgb(10, 177, 80);
+}
+
+.date-tab-item-top {
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.date-tab-item-top-week {
+  margin-top: 20rpx;
+}
+
+.booked-title {
+  color: rgba(155, 151, 151, 0.808);
+}
+
+.booked-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  background: rgb(10, 177, 80);
+  color: rgb(255, 255, 255);
+  font-size: 40rpx;
+  font-family: PingFangSC-Medium;
+  position: fixed;
+  bottom: 0;
+}
+
+.date-tab-content {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+
+.date-tab-content-top {
+  margin-top: 34rpx;
+  margin-left: 9%;
+  height: 35rpx;
+  width: 250rpx;
+  padding: 4rpx 10rpx;
+  border-radius: 10rpx;
+  float:initial;
+  font-size: 22rpx;
+  border: 1rpx solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.date-tab-content-center{
+  margin-top: 64rpx;
+  margin-left: 50rpx;
+}
+
+.date-tab-content-bottom{
+  margin-top: 26rpx;
+  margin-left: 50rpx;
+}
+
+.select-group{
+  margin-top: 46rpx;
+}
+
+.select-group .radio-group {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap:wrap;
+  font-size: 22rpx;
+}
+.select-group .radio-group label{
+  width: 300rpx;
+  word-break: break-all;
+}
+.select-group .radio {
+    padding: 5rpx 0rpx;
+}
+
+.amount-text{
+  color: red;
+  margin-left: 26rpx;
+}
+
 

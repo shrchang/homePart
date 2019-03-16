@@ -1,6 +1,6 @@
 <!--pages/room/info/room_info.wxml-->
 <import src="../usercomment/comment.wxml" />
-<import src="../../wxParse/wxParse.wxml"/>
+<import src="../../wxParse/wxParse.wxml" />
 <scroll-view scroll-y="true">
   <view class="head">
     <swiper class="swiperContainer" bindchange="swiperChange" autoplay="true" interval="5000" duration="1000">
@@ -17,7 +17,7 @@
     <view class="imageCount">
       <view>{{current+1}}/{{movies.length}}</view>
     </view>
-    <view class='card-image-view'>
+    <view bindtap='chooseSezi' class='card-image-view'>
     </view>
   </view>
   <view class="roominfo">
@@ -78,7 +78,7 @@
           </view>
         </view>
         <view class='cdxq-centent'>
-        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+          <template is="wxParse" data="{{wxParseData:article.nodes}}" />
         </view>
       </view>
       <view class="bottom-tab-item-content {{currentTab==1?'content-show':''}}">
@@ -87,4 +87,48 @@
       </view>
     </view>
   </view>
+
 </scroll-view>
+<!--隐藏区域  -->
+<view class='commodity_screen' catchtouchmove='stopPageScroll' wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+<view class='commodity_attr_box' catchtouchmove='stopPageScroll'  wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <view class="booked-top">
+    <view class="md-header">
+      <hr></hr>
+      <span class="booked-title">选择预定场次</span>
+      <hr></hr>
+    </view>
+  </view>
+  <view class="date-tab">
+    <view wx:for="{{5}}" wx:index="{{index}}">
+      <view class="date-tab-item {{currentDateTab==index?'date-tab-active':''}}" data-current="{{index}}" bindtap="clickDateTab">
+        <view class="date-tab-item-top">
+          <view>周日</view>
+          <view>12-23</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='date-tab-content'>
+      <block  wx:for="{{3}}" wx:index="{{index}}">
+      <view class='date-tab-content-top'>
+      <view class="date-tab-content-top-left">10:00-15:00</view>
+      <view class="date-tab-content-top-right amount-text">¥1000</view>
+      </view>
+      </block>
+      <view class='date-tab-content-center'>
+      <view class="select-text">套餐选择:</view>
+      <view class='select-group'>
+        <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{radioItems}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+  </label>
+</radio-group>
+      </view>
+      </view>
+      <view class='date-tab-content-bottom'>
+      总金额:<text class='amount-text'>¥1000</text>
+      </view>
+    </view>
+  <view class='booked-btn'>立即购买</view>
+</view>
